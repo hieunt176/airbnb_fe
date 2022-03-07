@@ -16,4 +16,5 @@ const H = (props: TextStyle) => {
     </Typography>
   );
 };
+
 export default H;

@@ -6,7 +6,6 @@ export interface TextStyle  {
   color?: string;
   background?: string;
   fontWeight?: string;
-  fontBold?: string;
   children?: React.ReactNode;
   padding?: string;
   margin?: string;
