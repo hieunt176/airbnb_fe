@@ -1,10 +1,10 @@
 import { makeStyles } from "@mui/styles";
-import { display } from "@mui/system";
+
 
 export const useStyles = makeStyles({
   carousel: {
     background: "#000000",
-    height: "450px",
+    height: "430px",
     paddingTop: "200px",
     textAlign: "center",
 
