@@ -1,7 +1,7 @@
 import React from "react";
 
-import PrimaryButton from "../../components/button/primary/primary";
-import H from "../../components/typography/h";
+import PrimaryButton from "../../../components/button/primary/primary";
+import H from "../../../components/typography/h";
 import { useStyles } from "./useStyles";
 
 const Banner = () => {

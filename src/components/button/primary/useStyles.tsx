@@ -1,5 +1,5 @@
 import { makeStyles } from "@mui/styles";
-import { ButtonStyle } from "../../../@types/ButtonStyle";
+import { ButtonStyle } from "../../../@types/styles/ButtonStyle";
 
 export const useStyles = makeStyles({
   primaryButton: {

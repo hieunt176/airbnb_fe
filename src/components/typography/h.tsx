@@ -1,6 +1,6 @@
 import Typography from "@mui/material/Typography";
 
-import { TextStyle } from "../../@types/TextStyle";
+import { TextStyle } from "../../@types/styles/TextStyle";
 import { chooseElementH } from "../../utils/variant";
 import { useStyles} from "./useStyles";
 

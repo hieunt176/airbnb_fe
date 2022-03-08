@@ -1,6 +1,6 @@
 import { makeStyles } from "@mui/styles";
 
-import { TextStyle } from "../../@types/TextStyle";
+import { TextStyle } from "../../@types/styles/TextStyle";
 
 export const useStyles = makeStyles({
   root: {
@@ -10,6 +10,8 @@ export const useStyles = makeStyles({
     fontWeight: (props: TextStyle) => props.fontWeight,
     margin: (props: TextStyle) => props.margin,
     padding: (props: TextStyle) => props.padding,
-    textAlign: (props: TextStyle) => props.textAlign,
+    paddingBottom: (props: TextStyle) => props.paddingBottom,
+    flexGrow: (props: TextStyle) => props.flexGrow,
+    textAlign: (props: TextStyle) => props.textAlign as "start",
   },
 });
