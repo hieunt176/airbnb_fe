@@ -1,8 +1,7 @@
 import React from "react";
 
-import { Button } from "@mui/material";
 import { useStyles } from "./useStyles";
-import { ButtonStyle } from "../../../@types/ButtonStyle";
+import { ButtonStyle } from "../../../@types/styles/ButtonStyle";
 
 const PrimaryButton = (props: ButtonStyle) => {
   const classes = useStyles(props);

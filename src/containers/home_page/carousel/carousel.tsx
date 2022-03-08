@@ -1,7 +1,7 @@
 import React from "react";
-import { LearnMore } from "../../components/button/learn-more/learnMore";
+import { LearnMore } from "../../../components/button/learn_more/learnMore";
 
-import H from "../../components/typography/h"
+import H from "../../../components/typography/h"
 import { useStyles } from "./useStyles";
 
 
