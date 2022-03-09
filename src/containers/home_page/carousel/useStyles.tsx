@@ -7,7 +7,6 @@ export const useStyles = makeStyles({
     height: "430px",
     paddingTop: "200px",
     textAlign: "center",
-
   },
   content: {
     height: "345px",

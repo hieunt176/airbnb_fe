@@ -5,6 +5,5 @@ export const useStyles = makeStyles({
     marginTop: "80px",
     width: "85%",
     margin: "0 auto",
-    display: "table"
   },
 });

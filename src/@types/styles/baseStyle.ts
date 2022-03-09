@@ -23,4 +23,5 @@ export interface BaseStyle {
   borderColor?: string;
   textAlign?: string;
   flexGrow?: number;
+  zIndex?: number;
 }
