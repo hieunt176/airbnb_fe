@@ -12,6 +12,8 @@ export const useStyles = makeStyles({
     padding: (props: TextStyle) => props.padding,
     paddingBottom: (props: TextStyle) => props.paddingBottom,
     flexGrow: (props: TextStyle) => props.flexGrow,
+    zIndex: (props: TextStyle) => props.zIndex,
+    width: (props: TextStyle) => props.width,
     textAlign: (props: TextStyle) => props.textAlign as "start",
   },
 });
