@@ -8,7 +8,7 @@ export enum VariantText {
   Inherit = "inherit"
 }
 
-export const chooseElementH = (variant: string) => {
+export const chooseElementH = (variant?: string) => {
   switch (variant) {
     case VariantText.H1:
       return VariantText.H1;

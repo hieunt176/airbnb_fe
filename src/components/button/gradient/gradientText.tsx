@@ -1,10 +1,13 @@
 import React from "react";
 
 import { useStyles } from "./useStyles";
-import { ButtonStyle } from "../../../@types/styles/ButtonStyle";
 
-const PrimaryButton = (props: ButtonStyle) => {
-  const classes = useStyles(props);
+interface Props {
+    children: React.ReactNode
+}
+
+const GradientTextButton = (props: Props) => {
+  const classes = useStyles();
 
   return (
     <button className={classes.primaryButton}>
@@ -13,4 +16,4 @@ const PrimaryButton = (props: ButtonStyle) => {
   );
 };
 
-export default PrimaryButton;
+export default GradientTextButton;

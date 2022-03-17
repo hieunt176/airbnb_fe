@@ -2,19 +2,17 @@ import React from "react";
 
 import { Card, CardContent, CardMedia, Typography } from "@mui/material";
 import { useStyles } from "./useStyles";
-import H from "../typography/h";
-import { CardTripStyle } from "../../@types/styles/CardTripStyle";
+import H from "../../typography/h";
+import { IDistanceCard } from "../../../@types/styles/card";
 
-const CardTrip = (props: CardTripStyle) => {
+const DistanceCard = (props: IDistanceCard) => {
   const classes = useStyles(props);
 
   return (
     <Card className={classes.card}>
-      <CardMedia  component="img" height="140" image={props.image} alt="green iguana" />
+      <CardMedia component="img" height="140" image={props.image} alt="green iguana" />
       <CardContent>
-        <H variant="h5" fontWeight="500 !important" padding="0 0 5px 0" flexGrow={1}>
-          {props.children}
-        </H>
+        <div className={classes.cardTitle}> {props.children}</div>
         <Typography variant="body2" className={classes.distance}>
           {props.distance}
         </Typography>
@@ -23,4 +21,4 @@ const CardTrip = (props: CardTripStyle) => {
   );
 };
 
-export default CardTrip;
+export default DistanceCard;

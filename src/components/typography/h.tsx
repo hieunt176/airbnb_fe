@@ -2,17 +2,18 @@ import Typography from "@mui/material/Typography";
 
 import { TextStyle } from "../../@types/styles/TextStyle";
 import { chooseElementH } from "../../utils/variant";
-import { useStyles} from "./useStyles";
-
+import { useStyles } from "./useStyles";
 
 const H = (props: TextStyle) => {
-  const {variant, children } = props;
-  const variantText = chooseElementH(variant)
-  const classes = useStyles(props)
+  const { variant, children } = props;
+  const variantText = chooseElementH(variant);
+  const classes = useStyles(props);
 
   return (
     <Typography component="div" variant={variantText} className={classes.root}>
-      {children}
+      <div>
+        <span className={classes.text}>{children}</span>
+      </div>
     </Typography>
   );
 };

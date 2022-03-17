@@ -3,9 +3,9 @@ import React from "react";
 import { Grid } from "@mui/material";
 import { useStyles } from "./useStyles";
 import H from "../../../components/typography/h";
-import FacebookSharpIcon from '@mui/icons-material/FacebookSharp';
-import PhotoCameraSharpIcon from '@mui/icons-material/PhotoCameraSharp';
-import FlutterDashSharpIcon from '@mui/icons-material/FlutterDashSharp';
+import FacebookSharpIcon from "@mui/icons-material/FacebookSharp";
+import PhotoCameraSharpIcon from "@mui/icons-material/PhotoCameraSharp";
+import FlutterDashSharpIcon from "@mui/icons-material/FlutterDashSharp";
 
 const Footer = () => {
   const classes = useStyles();
@@ -16,9 +16,7 @@ const Footer = () => {
         <div className={classes.information}>
           <Grid container spacing={2}>
             <Grid item xs={3}>
-              <H variant="h6" fontSize="unset !important" color="rgb(34, 34, 34)">
-                Hỗ trợ
-              </H>
+              <h3 className={classes.outstandingText}>Hỗ trợ</h3>
               <ul>
                 <li>
                   <a href="/#">Trung tâm trợ giúp</a>
@@ -41,9 +39,7 @@ const Footer = () => {
               </ul>
             </Grid>
             <Grid item xs={3}>
-              <H variant="h6" fontSize="unset !important" color="rgb(34, 34, 34)">
-                Cộng đồng
-              </H>
+              <h3 className={classes.outstandingText}> Cộng đồng</h3>
               <ul>
                 <li>
                   <a href="/#">Airbnb.org: nhà ở cứu trợ</a>
@@ -57,9 +53,7 @@ const Footer = () => {
               </ul>
             </Grid>
             <Grid item xs={3}>
-              <H variant="h6" fontSize="unset !important" color="rgb(34, 34, 34)">
-                Đón tiếp khách
-              </H>
+              <h3 className={classes.outstandingText}> Đón tiếp khách</h3>
               <ul>
                 <li>
                   <a href="/#">Thử đón tiếp khách</a>
@@ -79,9 +73,7 @@ const Footer = () => {
               </ul>
             </Grid>
             <Grid item xs={3}>
-              <H variant="h6" fontSize="unset !important" color="rgb(34, 34, 34)">
-                Giới thiệu
-              </H>
+              <h3 className={classes.outstandingText}>Giới thiệu</h3>
               <ul>
                 <li>
                   <a href="/#">Trang tin tức</a>
@@ -126,9 +118,9 @@ const Footer = () => {
               <span>USD</span>
             </div>
             <div className={classes.iconContact}>
-              <FacebookSharpIcon className={classes.icon}/>
-              <PhotoCameraSharpIcon className={classes.icon}/>
-              <FlutterDashSharpIcon className={classes.icon}/>
+              <FacebookSharpIcon className={classes.icon} />
+              <PhotoCameraSharpIcon className={classes.icon} />
+              <FlutterDashSharpIcon className={classes.icon} />
             </div>
           </div>
         </div>
