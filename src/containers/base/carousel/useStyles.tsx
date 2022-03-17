@@ -1,6 +1,5 @@
 import { makeStyles } from "@mui/styles";
 
-
 export const useStyles = makeStyles({
   carousel: {
     background: "#000000",
@@ -17,6 +16,10 @@ export const useStyles = makeStyles({
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
-    justifyContent: "center"
+    justifyContent: "center",
+    padding: "0 40px",
+  },
+  title: {
+    marginBottom: "25px",
   },
 });

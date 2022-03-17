@@ -6,4 +6,7 @@ export const useStyles = makeStyles({
     width: "85%",
     margin: "0 auto",
   },
+  listCards: {
+    marginTop: "35px",
+  },
 });

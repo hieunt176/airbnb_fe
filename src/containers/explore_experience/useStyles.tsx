@@ -1,7 +1,7 @@
 import { makeStyles } from "@mui/styles";
 
-import imageExperienceLeft from "../../../assets/images/img_experience_1.jpeg";
-import imageExperienceRight from "../../../assets/images/img_experience_2.jpeg";
+import imageExperienceLeft from "../../assets/images/img_experience_1.jpeg";
+import imageExperienceRight from "../../assets/images/img_experience_2.jpeg";
 
 export const useStyles = makeStyles({
   experience: {
@@ -18,6 +18,12 @@ export const useStyles = makeStyles({
     borderRadius: "10px",
     position: "relative",
     zIndex: 10,
+  },
+  title: {
+    marginBottom: "15px",
+  },
+  content: {
+    marginTop: "35px",
   },
   left: {
     backgroundImage: `url(${imageExperienceLeft})`,
@@ -46,5 +52,8 @@ export const useStyles = makeStyles({
     display: "flex",
     flexDirection: "column",
     justifyContent: "space-between",
+  },
+  textQuestion: {
+    width: "70%",
   },
 });

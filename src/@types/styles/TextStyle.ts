@@ -1,9 +1,8 @@
 // define properties styles
 
-import { BaseStyle } from "./baseStyle";
+import { BaseText } from "./baseText";
 
-export interface TextStyle  extends BaseStyle{
-
+export interface TextStyle  extends BaseText{
   children?: React.ReactNode;
-  variant: string;
+  variant?: string;
 }

@@ -18,6 +18,10 @@ export const useStyles = makeStyles({
     margin: "0 auto",
     width: "85%",
   },
+  outstandingText: {
+    fontSize: "unset !important",
+    color: "rgb(34, 34, 34)",
+  },
   information: {
     marginBottom: "40px",
     "& ul": {
