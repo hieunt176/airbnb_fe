@@ -1,4 +1,5 @@
 import { makeStyles } from "@mui/styles";
+import theme from "../../theme";
 
 export const useStyles = makeStyles({
   menu: {
@@ -35,6 +36,9 @@ export const useStyles = makeStyles({
   profile_menu: {
     width: 245,
     borderRadius: 20,
+    [theme.breakpoints.down("md")]: {
+      display: "none",
+    },
   },
 
   menu_item: {
