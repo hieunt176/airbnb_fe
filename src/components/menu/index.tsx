@@ -12,7 +12,7 @@ import Tooltip from "@mui/material/Tooltip";
 import MenuIcon from "@mui/icons-material/Menu";
 
 import IconButtonAB from "../button/icon_button/IconButtonAB";
-import LoginRegister from "../login_register";
+import LoginRegister from "../../containers/login_register";
 
 import { useStyles } from "./useStyles";
 
