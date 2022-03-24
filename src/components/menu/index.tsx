@@ -12,7 +12,7 @@ import Tooltip from "@mui/material/Tooltip";
 import MenuIcon from "@mui/icons-material/Menu";
 
 import IconButtonAB from "../button/icon_button/IconButtonAB";
-import Register from "../login_register/test";
+import LoginRegister from "../login_register";
 
 import { useStyles } from "./useStyles";
 
@@ -63,10 +63,10 @@ export default function AccountMenu() {
       >
         <div className={classes.profile_menu}>
           <MenuItem className={classes.menu_item + " " + classes.register}>
-            <Register />
+            <LoginRegister title="Đăng ký" />
           </MenuItem>
           <MenuItem className={classes.menu_item}>
-            <Register />
+            <LoginRegister title="Đăng nhập" />
           </MenuItem>
           <Divider />
           <MenuItem className={classes.menu_item}>Cho thuê nhà</MenuItem>
