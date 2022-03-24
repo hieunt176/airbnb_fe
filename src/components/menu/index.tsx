@@ -12,6 +12,7 @@ import Tooltip from "@mui/material/Tooltip";
 import MenuIcon from "@mui/icons-material/Menu";
 
 import IconButtonAB from "../button/icon_button/IconButtonAB";
+import LoginRegister from "../login_register";
 
 import { useStyles } from "./useStyles";
 
@@ -50,7 +51,7 @@ export default function AccountMenu() {
         id="account-menu"
         open={open}
         onClose={handleClose}
-        onClick={handleClose}
+        // onClick={handleClose}
         transformOrigin={{ horizontal: "right", vertical: "top" }}
         anchorOrigin={{ horizontal: "right", vertical: "bottom" }}
         PaperProps={{
@@ -62,9 +63,11 @@ export default function AccountMenu() {
       >
         <div className={classes.profile_menu}>
           <MenuItem className={classes.menu_item + " " + classes.register}>
-            Đăng ký
+            <LoginRegister title="Đăng ký" />
           </MenuItem>
-          <MenuItem className={classes.menu_item}>Đăng nhập</MenuItem>
+          <MenuItem className={classes.menu_item}>
+            <LoginRegister title="Đăng nhập" />
+          </MenuItem>
           <Divider />
           <MenuItem className={classes.menu_item}>Cho thuê nhà</MenuItem>
           <MenuItem className={classes.menu_item}>Tổ chức trải nghiệm</MenuItem>
