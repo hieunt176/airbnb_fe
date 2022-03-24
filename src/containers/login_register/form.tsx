@@ -7,7 +7,7 @@ import Input from "@mui/material/Input";
 import InputAdornment from "@mui/material/InputAdornment";
 import Button from "@mui/material/Button";
 
-import H from "../typography/h";
+import H from "../../components/typography/h";
 import { useStyles } from "./useStyles";
 
 interface State {
