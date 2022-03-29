@@ -1,9 +1,9 @@
-import React from 'react';
+import React from "react";
 
-import Button from '@mui/material/Button';
-import SearchIcon from '@mui/icons-material/Search';
+import Button from "@mui/material/Button";
+import SearchIcon from "@mui/icons-material/Search";
 
-import { useStyles } from './useStyles';
+import { useStyles } from "./useStyles";
 
 const Search = () => {
   const classes = useStyles();
