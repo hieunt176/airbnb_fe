@@ -6,15 +6,16 @@ import { Grid } from "@mui/material";
 
 const QuestionContent = () => {
   const classes = useStyles();
+
   return (
     <div className={classes.root}>
       <div className={classes.questionContent}>
         <p>Bạn có thắc mắc về việc đón tiếp khách?</p>
         <div>
-          Bạn chỉ cần hỏi{" "}
+          Bạn chỉ cần hỏi
           <span>
             <i>Huy</i>
-          </span>{" "}
+          </span>
           , một Chủ nhà siêu cấp tại Dalat. Họ sẽ hướng dẫn cho bạn về mọi vấn đề liên quan đến hoạt động đón tiếp khách.
         </div>
         <LightSilverButton background="#5F002A !important" color="#fff !important">
