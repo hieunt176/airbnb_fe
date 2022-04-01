@@ -1,7 +1,7 @@
 import { makeStyles } from "@mui/styles";
 
-import imageExperienceLeft from "../../assets/images/img_experience_1.jpeg";
-import imageExperienceRight from "../../assets/images/img_experience_2.jpeg";
+import imageExperienceLeft from "../../../assets/images/img_experience_1.jpeg";
+import imageExperienceRight from "../../../assets/images/img_experience_2.jpeg";
 
 export const useStyles = makeStyles({
   experience: {

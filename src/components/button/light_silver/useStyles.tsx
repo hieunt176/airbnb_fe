@@ -1,38 +1,17 @@
 import { makeStyles } from "@mui/styles";
+import { BaseButton } from "../../../@types/styles/baseButton";
+import { baseButton } from "../../../constants/style/baseButtonStyle";
+
+const { color, background } = baseButton;
 
 export const useStyles = makeStyles({
   rootButton: {
     padding: "14px 24px !important",
-    background: "#ffffff !important",
-    color: "#222222 !important",
+    background: (props: BaseButton) => props.background || background,
+    color: (props: BaseButton) => props.color || color,
     borderRadius: "8px !important",
     textTransform: "none !important" as "none",
     fontSize: "18px !important"
   },
 });
 
-// export const useStyles = makeStyles({
-//   primaryButton: {
-//     fontSize: (props: ButtonStyle) => props.fontSize,
-//     color: (props: ButtonStyle) => props.color,
-//     height: (props: ButtonStyle) => props.height,
-//     width: (props: ButtonStyle) => props.width,
-//     borderRadius: (props: ButtonStyle) => props.borderRadius,
-//     margin: (props: ButtonStyle) => props.margin,
-//     padding: (props: ButtonStyle) => props.padding,
-//     border: "1px solid #fff",
-//     borderColor: "#fff",
-//     cursor: "pointer",
-//     textTransform: "none !important" as "none",
-//     background: "#fff !important",
-//     '&:hover':{
-//         background: "#F7F7F7 !important",
-//     }
-//   },
-//   primarySpan: {
-//     backgroundImage: (props: ButtonStyle) => props.background,
-//     fontWeight: (props: ButtonStyle) => props.fontWeight,
-//     WebkitBackgroundClip: "text !important",
-//     WebkitTextFillColor: "transparent !important",
-//   },
-// });
