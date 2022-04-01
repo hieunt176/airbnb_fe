@@ -1,5 +1,5 @@
 import './App.css';
-import AskSuperHost from './pages/askSuperHost';
+import AskSuperHost from './pages/ask_super_host';
 import Home from "./pages/home"
 
 

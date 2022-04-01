@@ -1,5 +1,5 @@
 import { makeStyles } from "@mui/styles";
-import { Props } from "./superHostAnswer";
+import { Props } from "./commendCard";
 
 export const useStyles = makeStyles({
   root: {

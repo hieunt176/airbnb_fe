@@ -1,17 +1,12 @@
 import { Avatar } from "@mui/material";
 import React from "react";
-import LightSilverButton from "../../components/button/light_silver/lightSilver";
-import SuperHostAnswer from "../../components/superhost_answer/superHostAnswer";
-
-import H from "../../components/typography/h";
-import ListAnswer from "./list/listAnswer";
+import LightSilverButton from "../../../components/button/light_silver/lightSilver";
+import H from "../../../components/typography/h";
+import CommentsCard from "./comments_card/commentsCard";
 import { useStyles } from "./useStyle";
 
-interface Props {
-  comment: Comment;
-}
 
-const Answer = () => {
+const StepsMeetingSuperHost = () => {
   const classes = useStyles();
 
   const comments = [
@@ -69,7 +64,7 @@ const Answer = () => {
           Chủ nhà siêu cấp của bạn sẽ luôn sát cánh bên bạn trên mỗi bước đường
         </H>
       </div>
-      <ListAnswer comments={comments} />
+      <CommentsCard comments={comments} />
       <div className={classes.informationAddition}>
         <div className="intro">
           <div className="avatar">
@@ -89,4 +84,4 @@ const Answer = () => {
   );
 };
 
-export default Answer;
+export default StepsMeetingSuperHost;

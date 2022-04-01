@@ -1,10 +1,10 @@
 import React from "react";
-import LightSilverButton from "../../components/button/light_silver/lightSilver";
+import LightSilverButton from "../../../components/button/light_silver/lightSilver";
 import { useStyles } from "./useStyle";
 import PlayArrowIcon from "@mui/icons-material/PlayArrow";
 import { Grid } from "@mui/material";
 
-const QuestionContent = () => {
+const IntroductionSuperHost = () => {
   const classes = useStyles();
 
   return (
@@ -66,4 +66,4 @@ const QuestionContent = () => {
     </div>
   );
 };
-export default QuestionContent;
+export default IntroductionSuperHost;

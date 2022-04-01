@@ -1,13 +1,13 @@
 import { Avatar } from "@mui/material";
 import React from "react";
 import { useStyles } from "./useStyle";
-import { Comment, Content } from "../../containers/asksuperhost_answer/list/listAnswer";
+import { Comment, Content } from "../../../pages/ask_super_host/steps_meeting_super_host/comments_card/commentsCard";
 
 export interface Props {
   comment: Comment;
 }
 
-const SuperHostAnswer = (props: Props) => {
+const CommentCard = (props: Props) => {
   const classes = useStyles(props);
   const { step, title, contents } = props.comment;
 
@@ -48,4 +48,4 @@ const SuperHostAnswer = (props: Props) => {
   );
 };
 
-export default SuperHostAnswer;
+export default CommentCard;

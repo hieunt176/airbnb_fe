@@ -1,5 +1,5 @@
 import React from "react";
-import SuperHostAnswer from "../../../components/superhost_answer/superHostAnswer";
+import CommentCard from "../../../../components/card/comment_card/commendCard";
 import { useStyles } from "./useStyle";
 
 export interface Content {
@@ -20,19 +20,19 @@ interface Props {
   comments: Comment[];
 }
 
-const ListAnswer = (props: Props) => {
+const CommentsCard = (props: Props) => {
   const classes = useStyles();
   const { comments } = props;
 
-  const renderListAnswer = () => {
+  const renderCommentsCard = () => {
     if (!comments) return "";
 
     return comments.map((comment: Comment, key: number) => {
-      return <SuperHostAnswer comment={comment} key={key} />;
+      return <CommentCard comment={comment} key={key} />;
     });
   };
 
-  return <div className={classes.root}>{renderListAnswer()}</div>;
+  return <div className={classes.root}>{renderCommentsCard()}</div>;
 };
 
-export default ListAnswer;
+export default CommentsCard;
