@@ -5,7 +5,7 @@ import { useStyles } from "./useStyles";
 import { ButtonStyle } from "../../../@types/styles/buttonStyle";
 
 export const OutlinedButton = (props: ButtonStyle) => {
-  const classes = useStyles();
+  const classes = useStyles(props);
 
   return (
     <Button variant="outlined" className={classes.rootButton}>
