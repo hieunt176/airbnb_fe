@@ -15,7 +15,7 @@ const Carousel = () => {
             Giúp đỡ chỗ ở cho 100.000 người tị nạn đang chạy trốn khỏi Ukraine
           </H>
         </div>
-        <OutlinedButton />
+        <OutlinedButton>Tìm hiểu thêm </OutlinedButton>
       </div>
     </div>
   );

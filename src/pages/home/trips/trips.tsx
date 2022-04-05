@@ -2,9 +2,9 @@ import React, { Fragment } from "react";
 
 import { Grid } from "@mui/material";
 import { useStyles } from "./useStyles";
-import H from "../../components/typography/h";
-import DistanceCard from "../../components/card/trip_card/distanceCard";
-import { IDistanceCard } from "../../@types/styles/card";
+import H from "../../../components/typography/h";
+import DistanceCard from "../../../components/card/trip_card/distanceCard";
+import { IDistanceCard } from "../../../@types/styles/card";
 
 const Trips = () => {
   const classes = useStyles();

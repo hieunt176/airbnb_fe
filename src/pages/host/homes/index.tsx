@@ -1,13 +1,17 @@
 import React from "react";
 
-import FDM from "./FDM";
-import Carousel from "./carousel";
+import FMP from "./FMP";
+import Slider from "./slider";
+import WMPW from "./wmpw";
+import Footer from "../../../containers/base/footer/footer";
 
 const Homes = () => {
   return (
     <div>
-      <FDM />
-      <Carousel />
+      <FMP />
+      <Slider />
+      <WMPW />
+      <Footer />
     </div>
   );
 };
