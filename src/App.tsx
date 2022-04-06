@@ -1,13 +1,23 @@
-import './App.css';
-import AskSuperHost from './pages/ask_super_host';
-import Home from "./pages/home"
-
+import "./App.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { elementRoutes } from "../src/routes";
+import { ElementRoute } from "../src/routes";
 
 function App() {
+  const renderComponentRoutes = (componentRoutes: ElementRoute[]) => {
+    return componentRoutes.map((componentRoute: ElementRoute, index: number) => {
+      const { path, element } = componentRoute;
+     
+      return <Route key={index} path={path} element={element} />;
+    });
+  };
+
   return (
-    <div className="airbnb">
-      <AskSuperHost />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        {renderComponentRoutes(elementRoutes)}
+      </Routes>
+    </BrowserRouter>
   );
 }
 

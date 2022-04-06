@@ -1,9 +1,7 @@
 import React from "react";
 import Dialog from "@mui/material/Dialog";
-import DialogActions from "@mui/material/DialogActions";
 import DialogContent from "@mui/material/DialogContent";
 import DialogContentText from "@mui/material/DialogContentText";
-import DialogTitle from "@mui/material/DialogTitle";
 import Slide from "@mui/material/Slide";
 import { TransitionProps } from "@mui/material/transitions";
 import ClearIcon from "@mui/icons-material/Clear";
@@ -25,10 +23,6 @@ const Transition = React.forwardRef(function Transition(
 const DialogVideo = (props: Props) => {
   const classes = useStyles();
   const [open, setOpen] = React.useState(true);
-
-  const handleClickOpen = () => {
-    setOpen(true);
-  };
 
   const handleClose = () => {
     setOpen(false);

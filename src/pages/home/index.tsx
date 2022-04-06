@@ -9,7 +9,7 @@ import Trips from "./trips/trips";
 
 const Home = () => {
   return (
-    <div className="app__airbnb">
+    <div className="home">
       <Header />
       <Carousel />
       <Banner />

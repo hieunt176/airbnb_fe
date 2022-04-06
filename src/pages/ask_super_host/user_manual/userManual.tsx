@@ -2,7 +2,6 @@ import { Grid } from "@mui/material";
 import React from "react";
 import LightSilverButton from "../../../components/button/light_silver/lightSilver";
 import OutlinedButton from "../../../components/button/outline/outlinedButton";
-import VideoCard from "../../../components/card/video_card/videoCard";
 import H from "../../../components/typography/h";
 import DialogVideo from "../dialog/dialogVideo";
 import VideoCards from "./list_video_card/videoCards";
@@ -10,7 +9,6 @@ import { useStyles } from "./useStyle";
 
 export const UserManual = () => {
   const classes = useStyles();
-  const [open, setOpen] = React.useState(true);
   const videoCards = [
     {
       title: "Cách mô tả chỗ ở",
@@ -29,14 +27,6 @@ export const UserManual = () => {
       img: "https://a0.muscache.com/im/pictures/c64c6a3b-b5cb-430a-a5c9-7227d86fab94.jpg",
     },
   ];
-
-  const handleClickOpen = () => {
-    setOpen(true);
-  };
-
-  const handleClose = () => {
-    setOpen(false);
-  };
 
   return (
     <div className={classes.root}>
