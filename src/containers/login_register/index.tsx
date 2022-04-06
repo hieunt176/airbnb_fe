@@ -9,7 +9,7 @@ import Divider from "@mui/material/Divider";
 import Slide from "@mui/material/Slide";
 import { TransitionProps } from "@mui/material/transitions";
 
-import H from "../typography/h";
+import H from "../../components/typography/h";
 import Select from "./form";
 import { useStyles } from "./useStyles";
 

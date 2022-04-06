@@ -1,9 +1,9 @@
 import React from "react";
 
 import { Grid } from "@mui/material";
-import H from "../../components/typography/h";
+import H from "../../../components/typography/h";
 import { useStyles } from "./useStyles";
-import LightSilverButton from "../../components/button/light_silver/lightSilver";
+import LightSilverButton from "../../../components/button/light_silver/lightSilver";
 
 const ExploreExperience = () => {
   const classes = useStyles();

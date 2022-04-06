@@ -2,13 +2,10 @@ import React from "react";
 
 import Button from "@mui/material/Button";
 import { useStyles } from "./useStyles";
+import { ButtonStyle } from "../../../@types/styles/buttonStyle";
 
-interface Props {
-  children: React.ReactNode
-}
-
-const LightSilverButton = (props: Props) => {
-  const classes = useStyles();
+const LightSilverButton = (props: ButtonStyle) => {
+  const classes = useStyles(props);
 
   return (
     <Button variant="contained" className={classes.rootButton}>
