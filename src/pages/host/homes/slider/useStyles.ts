@@ -1,53 +1,6 @@
 import { makeStyles } from "@mui/styles";
-import theme from "../../../theme";
 
 export const useStyles = makeStyles({
-  //FMP container
-  fmp: {
-    width: "100%",
-    backgroundColor: "#000",
-    [theme.breakpoints.up("xs")]: {
-      overflow: "hidden",
-    },
-    [theme.breakpoints.down("xs")]: {
-      overflow: "auto",
-    },
-  },
-
-  fmp_left: {
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-    textAlign: "center",
-  },
-
-  title: {
-    color: "#fff",
-    fontSize: "64px",
-    fontWeight: "500",
-    lineHeight: "70px",
-    maxWidth: "463px !important",
-    marginBottom: "52px",
-  },
-
-  fmp_link: {
-    color: "#fff",
-    padding: "14px 24px",
-    fontSize: "16px",
-    fontWeight: "500",
-    borderRadius: "8px",
-    backgroundColor: "#e11860",
-  },
-
-  fmp_right: {},
-
-  video: {
-    width: "100%",
-    minHeight: "100vh",
-  },
-
-  //Slider
-
   slick: {
     "& .slick-arrow": {
       top: "auto !important",
