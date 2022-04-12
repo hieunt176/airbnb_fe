@@ -1,5 +1,4 @@
 import { makeStyles } from "@mui/styles";
-import theme from "../../../../theme";
 
 export const useStyles = makeStyles({
   question: {
@@ -22,15 +21,14 @@ export const useStyles = makeStyles({
     marginBottom: 78,
   },
 
-  air_cover: {
+  airCover: {
     margin: "60px 48px",
     backgroundColor: "#F7F7F7 !important",
     borderRadius: "12px",
-    // height: "756px !important",
     display: "flex",
   },
 
-  air_cover_left: {
+  airCoverLeft: {
     width: "50%",
     marginLeft: 80,
     marginRight: 32,
@@ -39,7 +37,7 @@ export const useStyles = makeStyles({
     lineHeight: "100px",
   },
 
-  air_cover_right: {
+  airCoverRight: {
     width: "50%",
     padding: "100px 0",
 

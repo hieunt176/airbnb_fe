@@ -1,4 +1,4 @@
-export interface FMPStyle {
+export interface CarouselStyle {
   display: string;
   title: string;
   content: string;

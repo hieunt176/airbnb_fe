@@ -2,8 +2,7 @@ import { makeStyles } from "@mui/styles";
 import theme from "../../../../theme";
 
 export const useStyles = makeStyles({
-  //FMP container
-  fmp: {
+  root: {
     width: "100%",
     backgroundColor: "#000",
     [theme.breakpoints.up("xs")]: {
@@ -14,7 +13,7 @@ export const useStyles = makeStyles({
     },
   },
 
-  fmp_left: {
+  containTitle: {
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
@@ -36,7 +35,7 @@ export const useStyles = makeStyles({
     margin: "0 40px 52px",
   },
 
-  fmp_link: {
+  link: {
     color: "#fff",
     padding: "14px 24px",
     fontSize: "16px",
@@ -45,7 +44,7 @@ export const useStyles = makeStyles({
     backgroundColor: "#e11860",
   },
 
-  fmp_right: {},
+  containVideo: {},
 
   video: {
     width: "100%",

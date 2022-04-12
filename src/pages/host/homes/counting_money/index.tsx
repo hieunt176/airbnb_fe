@@ -1,12 +1,11 @@
 import * as React from "react";
 import MenuItem from "@mui/material/MenuItem";
-import FormHelperText from "@mui/material/FormHelperText";
-import FormControl from "@mui/material/FormControl";
+
 import Select, { SelectChangeEvent } from "@mui/material/Select";
 
 import { useStyles } from "./useStyles";
 
-export default function WMPW() {
+export default function CountingMoney() {
   const classes = useStyles();
   const [homeType, setHoneType] = React.useState("0");
   const [numCustomer, setNumCustomer] = React.useState("3");
@@ -34,7 +33,6 @@ export default function WMPW() {
 
   return (
     <div className={classes.root}>
-      {/* <FormControl sx={{ m: 1, minWidth: 120 }}> */}
       <span className={classes.title}>Bạn muốn cho thuê loại chỗ ở nào?</span>
       <Select value={homeType} onChange={changeHomeType}>
         {homeTypes.map((homeType, index) => (
@@ -64,7 +62,6 @@ export default function WMPW() {
       <a href="#" className={classes.link}>
         Cách chúng tôi ước tính thu nhập tiềm năng của bạn
       </a>
-      {/* </FormControl> */}
     </div>
   );
 }

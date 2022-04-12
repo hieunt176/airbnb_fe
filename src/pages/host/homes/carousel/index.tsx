@@ -1,25 +1,24 @@
 import React from "react";
 
-import Button from "@mui/material/Button";
 import Grid from "@mui/material/Grid";
 
-import { FMPStyle } from "../../../../@types/styles/fmpStyle";
+import { CarouselStyle } from "../../../../@types/styles/carouselStyle";
 import { useStyles } from "./useStyles";
 
-const FMP = (props: FMPStyle) => {
+const Carousel = (props: CarouselStyle) => {
   const { display, title, content, btnText, video } = props;
   const classes = useStyles();
+
   return (
-    <div className={classes.fmp}>
+    <div className={classes.root}>
       <Grid
         container
-        // direction="row-reverse"
         direction={display === "0" ? "row-reverse" : "row"}
         justifyContent="center"
         alignItems="center"
         spacing={0}
       >
-        <Grid item xs={12} md={6} className={classes.fmp_right}>
+        <Grid item xs={12} md={6} className={classes.containVideo}>
           <video
             className={classes.video}
             autoPlay
@@ -38,15 +37,15 @@ const FMP = (props: FMPStyle) => {
           xs={12}
           md={6}
           flexDirection="column"
-          className={classes.fmp_left}
+          className={classes.containTitle}
         >
           <span className={classes.title}>{title}</span>
           <span className={classes.content}>{content}</span>
-          <a className={classes.fmp_link}>{btnText}</a>
+          <a className={classes.link}>{btnText}</a>
         </Grid>
       </Grid>
     </div>
   );
 };
 
-export default FMP;
+export default Carousel;

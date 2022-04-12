@@ -12,7 +12,6 @@ export const useStyles = makeStyles({
       },
     },
     "& .slick-prev": {
-      // right: "60%",
       left: "58% !important",
       zIndex: 10,
     },
@@ -29,42 +28,42 @@ export const useStyles = makeStyles({
     textAlign: "center",
   },
 
-  slider_title: {
+  sliderTitle: {
     color: "#000",
     fontSize: "64px",
     fontWeight: "500",
     lineHeight: "70px",
   },
 
-  slider_item: {
+  sliderItem: {
     marginTop: "80px",
     width: "95% !important",
     textAlign: "left",
   },
 
-  slider_img: {
+  sliderImg: {
     width: "100%",
   },
 
-  item_infor: {
+  itemInfor: {
     marginTop: "48px !important",
     paddingRight: "24px",
   },
 
-  item_label: {
+  itemLabel: {
     color: ":#222222 !important",
     fontSize: "26px !important",
     lineHeight: "30px !important",
   },
 
-  item_host: {
+  itemHost: {
     height: "32px",
     width: "auto",
     minHeight: "1px",
     marginTop: "34px !important",
   },
 
-  item_place: {
+  itemPlace: {
     marginTop: "24px !important",
     color: "#717171 !important",
     fontSize: "16px !important",
