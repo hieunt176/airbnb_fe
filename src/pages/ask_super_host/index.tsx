@@ -6,7 +6,7 @@ import UserManual from "./user_manual/userManual";
 
 const AskSuperHost = () => {
   return (
-    <div>
+    <div className="askSuperHost">
       <IntroductionSuperHost />
       <StepsMeetingSuperHost />
       <UserManual />

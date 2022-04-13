@@ -24,7 +24,7 @@ export const useStyles = makeStyles({
   },
   background: {
     display: "flex",
-    "& .left__content": {
+    "& .leftContent": {
       background: "#5F002A",
       width: "50%",
       display: "flex",
@@ -47,7 +47,7 @@ export const useStyles = makeStyles({
         margin: "0 auto",
       },
     },
-    "& .right__content": {
+    "& .rightContent": {
       width: "50%",
       position: "relative",
       "& video": {

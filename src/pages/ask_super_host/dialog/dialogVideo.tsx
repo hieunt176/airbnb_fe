@@ -1,9 +1,7 @@
 import React from "react";
 import Dialog from "@mui/material/Dialog";
-import DialogActions from "@mui/material/DialogActions";
 import DialogContent from "@mui/material/DialogContent";
 import DialogContentText from "@mui/material/DialogContentText";
-import DialogTitle from "@mui/material/DialogTitle";
 import Slide from "@mui/material/Slide";
 import { TransitionProps } from "@mui/material/transitions";
 import ClearIcon from "@mui/icons-material/Clear";
@@ -24,28 +22,26 @@ const Transition = React.forwardRef(function Transition(
 
 const DialogVideo = (props: Props) => {
   const classes = useStyles();
-  const [open, setOpen] = React.useState(true);
-
-  const handleClickOpen = () => {
-    setOpen(true);
-  };
+  const [isOpen, setIsOpen] = React.useState(true);
 
   const handleClose = () => {
-    setOpen(false);
+    setIsOpen(false);
   };
   return (
     <div className={classes.root}>
-      <Dialog open={open} TransitionComponent={Transition} keepMounted onClose={handleClose} aria-describedby="alert-dialog-slide-description" className={classes.dialog}>
+      <Dialog open={isOpen} TransitionComponent={Transition} keepMounted onClose={handleClose} aria-describedby="alertDialogSlideDescription" className={classes.dialog}>
         <DialogContent>
-          <DialogContentText id="alert-dialog-slide-description">
-            <div className="left__content">
-              <div className="control__item">
-                <ClearIcon className="clear__icon"/>
-                <p>Cách mô tả <br/> chỗ ở</p>
+          <DialogContentText id="alertDialogSlideDescription">
+            <div className="leftContent">
+              <div className="controlItem">
+                <ClearIcon className="clearIcon" />
+                <p>
+                  Cách mô tả <br /> chỗ ở
+                </p>
               </div>
             </div>
-            <div className="right__content">
-              <video className="videoTag" controls  loop muted>
+            <div className="rightContent">
+              <video className="videoTag" controls loop muted>
                 <source src="https://a0.muscache.com/v/c1/77/c1776f77-b7d6-568b-94f7-4ebb82c47fc9/c1776f77b7d6568b94f74ebb82c47fc9_4000k_1.mp4" type="video/mp4" />
               </video>
             </div>
