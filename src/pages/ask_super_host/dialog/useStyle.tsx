@@ -13,19 +13,19 @@ export const useStyles = makeStyles({
         overflowY: "hidden !important",
       },
     },
-    "& #alert-dialog-slide-description": {
+    "& #alertDialogSlideDescription": {
       display: "flex",
       height: "100%",
-      "& .left__content": {
+      "& .leftContent": {
         width: "50%",
         padding: "20px 0",
-        "& .control__item": {
+        "& .controlItem": {
           display: "flex",
           flexDirection: "column",
           justifyContent: "space-between",
           height: "100%",
           padding: "0 20px",
-          "& .clear__icon": {
+          "& .clearIcon": {
             cursor: "pointer",
           },
           "& p": {
@@ -36,7 +36,7 @@ export const useStyles = makeStyles({
           },
         },
       },
-      "& .right__content": {
+      "& .rightContent": {
         width: "50%",
         background: "#2222",
         "& video": {

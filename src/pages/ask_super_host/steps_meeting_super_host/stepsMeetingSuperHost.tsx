@@ -70,7 +70,7 @@ const StepsMeetingSuperHost = () => {
           <div className="avatar">
             <Avatar sx={{ width: 100, height: 100 }} alt="Travis Howard" src="https://a0.muscache.com/im/pictures/f82e594f-d7e2-4032-a021-9c15f490f42e.jpg?im_w=240" variant="square" />
           </div>
-          <div className="name__place">
+          <div className="namePlace">
             <div className="name">Huy</div>
             <div className="place">Dalat</div>
           </div>
