@@ -23,13 +23,13 @@ const IntroductionSuperHost = () => {
         </LightSilverButton>
       </div>
       <div className={classes.background}>
-        <div className="left__content">
+        <div className="leftContent">
           <div className="content">
             <span>Hỏi ý kiến Chủ nhà siêu cấp</span>
             <div>Nhận sự trợ giúp riêng, miễn phí từ những Chủ nhà xuất sắc nhất của Airbnb</div>
           </div>
         </div>
-        <div className="right__content">
+        <div className="rightContent">
           <video className="videoTag" autoPlay loop muted>
             <source src="https://a0.muscache.com/v/c1/77/c1776f77-b7d6-568b-94f7-4ebb82c47fc9/c1776f77b7d6568b94f74ebb82c47fc9_4000k_1.mp4" type="video/mp4" />
           </video>

@@ -21,7 +21,7 @@ export const useStyles = makeStyles({
           borderRadius:"10px",
         }
       },
-      "& .name__place": {
+      "& .namePlace": {
         paddingLeft: "25px",
         "& .name": {
           fontSize: "16px",
