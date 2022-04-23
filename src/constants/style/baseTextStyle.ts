@@ -1,6 +1,5 @@
 import { TextStyle } from "../../@types/styles/TextStyle";
 
-
 export const baseText: TextStyle = {
   color: "#fff",
   fontWeight: "800",
