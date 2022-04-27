@@ -1,6 +1,7 @@
 import Home from "../pages/home";
 import AskSuperHost from "../pages/ask_super_host";
 import HostYourHome from "../pages/host/homes";
+import Experiences from "../pages/host/experiences";
 
 export interface ElementRoute {
   path: string;
@@ -19,5 +20,9 @@ export const elementRoutes: ElementRoute[] = [
   {
     path: "/host/homes",
     element: <HostYourHome />,
+  },
+  {
+    path: "host/experiences",
+    element: <Experiences />,
   },
 ];

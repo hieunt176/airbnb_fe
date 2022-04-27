@@ -2,7 +2,8 @@ import { makeStyles } from "@mui/styles";
 import { TextStyle } from "../../@types/styles/TextStyle";
 import { baseText } from "../../constants/style/baseTextStyle";
 
-const { color, fontWeight, textAlign, fontSize, padding } = baseText;
+const { color, fontWeight, textAlign, fontSize, padding, lineHeight } =
+  baseText;
 
 export const useStyles = makeStyles({
   root: {
@@ -14,5 +15,6 @@ export const useStyles = makeStyles({
     textAlign: (props: TextStyle) => (props.textAlign as "start") || textAlign,
     fontSize: (props: TextStyle) => props.fontSize || fontSize,
     padding: (props: TextStyle) => props.padding || padding,
+    lineHeight: (props: TextStyle) => props.lineHeight || lineHeight,
   },
 });
