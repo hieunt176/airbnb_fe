@@ -6,10 +6,10 @@ import H from "../../../../../components/typography/h";
 
 import { useStyles } from "./useStyles";
 
-import { Activity } from "../";
+import { BaseCard } from "../../../../../@types/styles/baseCard";
 
 export interface Props {
-  activity: Activity;
+  activity: BaseCard;
   index: number;
 }
 

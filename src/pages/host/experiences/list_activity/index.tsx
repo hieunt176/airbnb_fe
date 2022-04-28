@@ -4,16 +4,12 @@ import ActivityCard from "./activity_card";
 
 import { useStyles } from "./useStyles";
 
-export interface Activity {
-  img: string;
-  title: string;
-  content: string;
-}
+import { BaseCard } from "../../../../@types/styles/baseCard";
 
 const ListActivity = () => {
   const classes = useStyles();
 
-  const listActivity: Activity[] = [
+  const listActivity: BaseCard[] = [
     {
       img: "https://a0.muscache.com/im/pictures/2bdf020b-303c-46a4-bf2c-6c6a8e775bd8.jpg",
       title: "Tạo một hoạt động theo cách của bạn",
@@ -37,7 +33,7 @@ const ListActivity = () => {
   const renderActivity = () => {
     if (!listActivity) return "";
 
-    return listActivity.map((activity: Activity, key: number) => {
+    return listActivity.map((activity: BaseCard, key: number) => {
       return <ActivityCard activity={activity} key={key} index={key} />;
     });
   };
