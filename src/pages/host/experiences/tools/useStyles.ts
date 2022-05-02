@@ -12,7 +12,10 @@ export const useStyles = makeStyles({
   },
 
   btn: {
-    margin: "80px auto",
+    marginTop: 80,
+    paddingBottom: 140,
     textAlign: "center",
+    background:
+      "linear-gradient(0deg, rgba(242, 242, 242, 0.5) 11.16%, rgba(255, 255, 255, 0) 65.97%) !important",
   },
 });
