@@ -4,6 +4,7 @@ export const useStyles = makeStyles({
   root: {
     marginTop: 100,
     textAlign: "center",
+    position: "relative",
   },
 
   search: {

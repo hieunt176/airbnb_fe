@@ -1,11 +1,8 @@
 import React from "react";
-
-import { Grid } from "@mui/material";
+import Grid from "@mui/material/Grid";
 
 import H from "../../../../../components/typography/h";
-
 import { BaseCard } from "../../../../../@types/styles/baseCard";
-
 import { useStyles } from "./useStyles";
 
 export interface Props {

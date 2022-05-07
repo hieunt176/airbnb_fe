@@ -1,14 +1,10 @@
-import React from "react";
-
+import React, { Fragment } from "react";
 import Grid from "@mui/material/Grid";
 
 import H from "../../../../components/typography/h";
-
 import GettingStarted from "./getting_started";
 import TopArticles from "./top_articles";
-
 import { IPanel } from "../tab_panel";
-
 import { useStyles } from "./useStyles";
 
 interface Props {
@@ -20,7 +16,7 @@ const Topic = (props: Props) => {
 
   const classes = useStyles();
   return (
-    <React.Fragment>
+    <Fragment>
       <Grid container justifyContent="center" alignItems="center" spacing={2}>
         <Grid item md={6}>
           <H fontSize="26px" color="#484848" fontWeight="600">
@@ -38,7 +34,7 @@ const Topic = (props: Props) => {
         Bài viết hàng đầu
       </H>
       <TopArticles articles={panel.articles} />
-    </React.Fragment>
+    </Fragment>
   );
 };
 

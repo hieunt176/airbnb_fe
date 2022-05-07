@@ -1,13 +1,10 @@
 import React from "react";
-
 import Grid from "@mui/material/Grid";
 
+import ExploreCard from "./explore_card";
 import LightSilverButton from "../../../components/button/light_silver/lightSilver";
 import H from "../../../components/typography/h";
-
 import { BaseCard } from "../../../@types/styles/baseCard";
-
-import ExploreCard from "./explore_card";
 import { useStyles } from "./useStyles";
 
 const ExploreMore = () => {

@@ -9,6 +9,7 @@ export interface Props {
 
 const Articles = (props: Props) => {
   const classes = useStyles();
+
   const articles = props.articles;
 
   const renderArticles = (articles: string[]) => {

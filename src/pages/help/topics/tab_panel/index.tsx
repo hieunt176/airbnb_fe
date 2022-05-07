@@ -1,9 +1,7 @@
 import * as React from "react";
 
 import Topic from "../topic";
-
 import { BaseCard } from "../../../../@types/styles/baseCard";
-
 import { TabPanelProps } from "../";
 
 export interface IPanel {

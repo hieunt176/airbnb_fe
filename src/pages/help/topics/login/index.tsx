@@ -1,11 +1,8 @@
 import React from "react";
-
-import { Grid } from "@mui/material";
+import Grid from "@mui/material/Grid";
 
 import LightSilverButton from "../../../../components/button/light_silver/lightSilver";
-
 import H from "../../../../components/typography/h";
-
 import { useStyles } from "./useStyles";
 
 const Login = () => {

@@ -1,5 +1,4 @@
-import React from "react";
-
+import React, { useState } from "react";
 import Button from "@mui/material/Button";
 import ClickAwayListener from "@mui/material/ClickAwayListener";
 import InputBase from "@mui/material/InputBase";
@@ -8,7 +7,6 @@ import SearchIcon from "@mui/icons-material/Search";
 
 import Articles from "./articles";
 import H from "../../../components/typography/h";
-
 import { useStyles } from "./useStyles";
 
 const HelpSearch = () => {
@@ -20,7 +18,7 @@ const HelpSearch = () => {
     "Nếu Chủ nhà/Người tổ chức hủy đặt phòng/đặt chỗ của bạn",
   ];
 
-  const [showArticles, setShowArticles] = React.useState<Boolean>(false);
+  const [showArticles, setShowArticles] = useState<Boolean>(false);
 
   const handleFocused = () => {
     setShowArticles(true);
@@ -42,7 +40,6 @@ const HelpSearch = () => {
             placeholder="Tìm kiếm thông tin hướng dẫn và những thông tin khác"
             onFocus={handleFocused}
           />
-
           <Button type="submit">
             <SearchIcon className={classes.search_icon} />
           </Button>

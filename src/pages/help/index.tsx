@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 
 import Header from "../../containers/base/header";
 import Footer from "../../containers/base/footer/footer";
@@ -8,13 +8,13 @@ import ExploreMore from "./explore_more";
 
 const Help = () => {
   return (
-    <React.Fragment>
+    <Fragment>
       <Header />
       <HelpSearch />
       <Topics />
       <ExploreMore />
       <Footer />
-    </React.Fragment>
+    </Fragment>
   );
 };
 

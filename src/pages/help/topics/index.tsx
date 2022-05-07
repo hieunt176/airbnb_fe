@@ -1,10 +1,9 @@
-import * as React from "react";
+import React, { useState } from "react";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Box from "@mui/material/Box";
 
 import Login from "./login";
-
 import TabPanel from "./tab_panel";
 import { useStyles } from "./useStyles";
 
@@ -23,7 +22,7 @@ const a11yProps = (index: number) => {
 
 const Topics = () => {
   const classes = useStyles();
-  const [value, setValue] = React.useState<number>(0);
+  const [value, setValue] = useState<number>(0);
 
   const tabs: TabPanelProps[] = [
     {
@@ -52,14 +51,14 @@ const Topics = () => {
     setValue(newValue);
   };
 
-  const renderTab = (tabs: TabPanelProps[]) => {
-    return tabs.map((tabTopic: TabPanelProps) => {
+  const renderTab = (topics: TabPanelProps[]) => {
+    return topics.map((topic: TabPanelProps) => {
       return (
         <Tab
           sx={{ textTransform: "capitalize" }}
-          label={tabTopic.tab}
-          {...a11yProps(tabTopic.index)}
-          key={tabTopic.index}
+          label={topic.tab}
+          {...a11yProps(topic.index)}
+          key={topic.index}
         />
       );
     });

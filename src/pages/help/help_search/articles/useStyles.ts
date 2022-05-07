@@ -8,7 +8,7 @@ export const useStyles = makeStyles({
     width: 400,
     borderRadius: "40px",
     boxShadow: "rgba(0, 0, 0, 0.28) 0 8px 28px 0",
-    top: "60%",
+    top: "120%",
     zIndex: 100,
     padding: 20,
   },
@@ -22,6 +22,7 @@ export const useStyles = makeStyles({
     alignItems: "center",
     textDecoration: "none",
   },
+
   title: {
     marginLeft: 10,
   },

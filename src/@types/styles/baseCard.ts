@@ -1,5 +1,5 @@
 export interface BaseCard {
-  img: string;
-  title: string;
-  content: string;
+  img?: string;
+  title?: string;
+  content?: string;
 }
