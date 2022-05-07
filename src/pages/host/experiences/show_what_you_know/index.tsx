@@ -1,18 +1,15 @@
-import React from "react";
-
+import React, { Fragment } from "react";
 import Grid from "@mui/material/Grid";
 
 import ExperienceTitle from "../experience_title";
 import KnowledgeCard from "./knowledge_card";
-
 import { useStyles } from "./useStyles";
-
 import { BaseCard } from "../../../../@types/styles/baseCard";
 
 const ShowWhatYouKnow = () => {
   const classes = useStyles();
+
   const experienceTitle: BaseCard = {
-    img: "",
     title: "Thể hiện những điều bạn biết",
     content:
       "Mọi loại hình trải nghiệm như nấu ăn, làm đồ thủ công, chèo thuyền kayak và nhiều loại hình khác. Không có giới hạn nào cho những điều bạn có thể làm. Khám phá các danh mục nổi bật này.",
@@ -50,7 +47,7 @@ const ShowWhatYouKnow = () => {
   };
 
   return (
-    <React.Fragment>
+    <Fragment>
       <ExperienceTitle experienceTitle={experienceTitle} />
       <Grid
         className={classes.knowledge}
@@ -61,7 +58,7 @@ const ShowWhatYouKnow = () => {
       >
         {renderKnowledge()}
       </Grid>
-    </React.Fragment>
+    </Fragment>
   );
 };
 

@@ -1,11 +1,8 @@
 import React from "react";
-
 import Grid from "@mui/material/Grid";
 
 import H from "../../../../../components/typography/h";
-
 import { useStyles } from "./useStyles";
-
 import { BaseCard } from "../../../../../@types/styles/baseCard";
 
 export interface Props {
@@ -15,6 +12,7 @@ export interface Props {
 
 const ActivityCard = (props: Props) => {
   const classes = useStyles();
+
   const { img, title, content } = props.activity;
   const index = props.index;
 

@@ -1,17 +1,13 @@
-import React from "react";
-
+import React, { Fragment } from "react";
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
 
 import ExperienceTitle from "../experience_title";
-import ExperienceCard from "../experience_card";
-
+import ExperienceCard, { IExperieceCard } from "../experience_card";
 import { BaseCard } from "../../../../@types/styles/baseCard";
-import { IExperieceCard } from "../experience_card";
 
 const Tutorial = () => {
   const experienceTitle: BaseCard = {
-    img: "",
     title:
       "Tham gia cộng đồng đang ngày càng lớn mạnh của những người thích khám phá",
     content:
@@ -20,23 +16,19 @@ const Tutorial = () => {
 
   const tutorials: IExperieceCard[] = [
     {
-      card: {
-        img: "https://a0.muscache.com/im/pictures/b7f0cbdb-2251-4513-b3cc-b93546606c7c.jpg",
-        title: "DJ Jigüe",
-        content:
-          "DJ Jigüe luôn muốn chia sẻ niềm đam mê của anh dành cho âm nhạc Cuba có nguồn gốc từ châu Phi với mọi người. Anh giới thiệu cho khách về lịch sử âm nhạc phức hợp của Cuba và một số vị khách thậm chí đã đến xem anh chơi nhạc tại một buổi trình diễn ở Austin, Texas.",
-      },
+      img: "https://a0.muscache.com/im/pictures/b7f0cbdb-2251-4513-b3cc-b93546606c7c.jpg",
+      title: "DJ Jigüe",
+      content:
+        "DJ Jigüe luôn muốn chia sẻ niềm đam mê của anh dành cho âm nhạc Cuba có nguồn gốc từ châu Phi với mọi người. Anh giới thiệu cho khách về lịch sử âm nhạc phức hợp của Cuba và một số vị khách thậm chí đã đến xem anh chơi nhạc tại một buổi trình diễn ở Austin, Texas.",
       link: "Tìm hiểu trải nghiệm",
       backgroundColor: "#ECEFDE",
       height: "766px",
     },
     {
-      card: {
-        img: "https://a0.muscache.com/im/pictures/b7f0cbdb-2251-4513-b3cc-b93546606c7c.jpg",
-        title: "DJ Jigüe",
-        content:
-          "DJ Jigüe luôn muốn chia sẻ niềm đam mê của anh dành cho âm nhạc Cuba có nguồn gốc từ châu Phi với mọi người. Anh giới thiệu cho khách về lịch sử âm nhạc phức hợp của Cuba và một số vị khách thậm chí đã đến xem anh chơi nhạc tại một buổi trình diễn ở Austin, Texas.",
-      },
+      img: "https://a0.muscache.com/im/pictures/b7f0cbdb-2251-4513-b3cc-b93546606c7c.jpg",
+      title: "DJ Jigüe",
+      content:
+        "DJ Jigüe luôn muốn chia sẻ niềm đam mê của anh dành cho âm nhạc Cuba có nguồn gốc từ châu Phi với mọi người. Anh giới thiệu cho khách về lịch sử âm nhạc phức hợp của Cuba và một số vị khách thậm chí đã đến xem anh chơi nhạc tại một buổi trình diễn ở Austin, Texas.",
       link: "Tìm hiểu trải nghiệm",
       backgroundColor: "#F5E3CE",
       height: "766px",
@@ -54,7 +46,7 @@ const Tutorial = () => {
   };
 
   return (
-    <React.Fragment>
+    <Fragment>
       <ExperienceTitle experienceTitle={experienceTitle} />
       <Grid container justifyContent="center" alignItems="center" spacing={4}>
         {renderTutorialCard()}
@@ -66,7 +58,7 @@ const Tutorial = () => {
           paddingBottom: "96px",
         }}
       ></Box>
-    </React.Fragment>
+    </Fragment>
   );
 };
 

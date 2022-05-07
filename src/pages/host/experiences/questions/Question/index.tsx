@@ -1,7 +1,6 @@
-import React from "react";
+import React, { Fragment } from "react";
 
 import H from "../../../../../components/typography/h";
-
 import { IQuestion } from "../";
 
 export interface Props {
@@ -12,7 +11,7 @@ const Question = (props: Props) => {
   const { question, answer } = props.qa;
 
   return (
-    <React.Fragment>
+    <Fragment>
       <H fontSize="18px" color="#484848" fontWeight="600" lineHeight="2em">
         {question}
       </H>
@@ -22,7 +21,7 @@ const Question = (props: Props) => {
       <br />
       <hr />
       <br />
-    </React.Fragment>
+    </Fragment>
   );
 };
 

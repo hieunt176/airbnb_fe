@@ -1,21 +1,17 @@
 import React from "react";
-
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import CardActions from "@mui/material/CardActions";
 
 import H from "../../../../components/typography/h";
-
 import { useStyles } from "./useStyles";
-
 import { BaseCard } from "../../../../@types/styles/baseCard";
 
-export interface IExperieceCard {
-  card: BaseCard;
-  link: string;
-  backgroundColor: string;
-  height: string;
+export interface IExperieceCard extends BaseCard {
+  link?: string;
+  backgroundColor?: string;
+  height?: string;
 }
 
 export interface Props {
@@ -24,8 +20,10 @@ export interface Props {
 
 const ExperienceCard = (props: Props) => {
   const classes = useStyles();
-  const { card, link, backgroundColor, height } = props.experience;
-  const { img, title, content } = card;
+
+  const { img, title, content, link, backgroundColor, height } =
+    props.experience;
+
   return (
     <Card
       sx={{
@@ -45,9 +43,7 @@ const ExperienceCard = (props: Props) => {
         </H>
       </CardContent>
       <CardActions>
-        {link === "" ? (
-          ""
-        ) : (
+        {!link || (
           <a href="#" className={classes.action}>
             {link}
           </a>

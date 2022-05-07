@@ -1,16 +1,12 @@
 import React from "react";
-
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
 
 import H from "../../../../../components/typography/h";
-
 import { BaseCard } from "../../../../../@types/styles/baseCard";
-
 import { useStyles } from "./useStyles";
 
-export interface ITool {
-  tool: BaseCard;
+export interface ITool extends BaseCard {
   border: string;
 }
 
@@ -19,35 +15,23 @@ const ToolForYou = () => {
 
   const tools: ITool[] = [
     {
-      tool: {
-        img: "https://a0.muscache.com/airbnb/static/packages/assets/frontend/explore-core/images/icon-uc-alarm.e0a2b02fa7d1e956cd4135847fc0cda1.gif",
-        title: "Nhiệm vụ",
-        content: "",
-      },
+      img: "https://a0.muscache.com/airbnb/static/packages/assets/frontend/explore-core/images/icon-uc-alarm.e0a2b02fa7d1e956cd4135847fc0cda1.gif",
+      title: "Nhiệm vụ",
       border: "2px solid #FF5A5F",
     },
     {
-      tool: {
-        img: "https://a0.muscache.com/airbnb/static/packages/assets/frontend/explore-core/images/icon-uc-calendar.ace59291b2904181320cb34108a24537.gif",
-        title: "Lên lịch",
-        content: "",
-      },
+      img: "https://a0.muscache.com/airbnb/static/packages/assets/frontend/explore-core/images/icon-uc-calendar.ace59291b2904181320cb34108a24537.gif",
+      title: "Lên lịch",
       border: "2px solid #60B6B5",
     },
     {
-      tool: {
-        img: "https://a0.muscache.com/airbnb/static/packages/assets/frontend/explore-core/images/icon-uc-money-saved.0d988c4ec128a1a11fdc5c499940dec8.gif",
-        title: "Thanh toán",
-        content: "",
-      },
+      img: "https://a0.muscache.com/airbnb/static/packages/assets/frontend/explore-core/images/icon-uc-money-saved.0d988c4ec128a1a11fdc5c499940dec8.gif",
+      title: "Thanh toán",
       border: "2px solid #FFB400",
     },
     {
-      tool: {
-        img: "https://a0.muscache.com/airbnb/static/packages/assets/frontend/explore-core/images/icon-uc-graph.3f8bd411622845e624b9be5ba9631168.gif",
-        title: "Thanh toán",
-        content: "",
-      },
+      img: "https://a0.muscache.com/airbnb/static/packages/assets/frontend/explore-core/images/icon-uc-graph.3f8bd411622845e624b9be5ba9631168.gif",
+      title: "Thanh toán",
       border: "2px solid #60B6B5",
     },
   ];
@@ -57,11 +41,11 @@ const ToolForYou = () => {
       return (
         <Grid item className={classes.card} key={key}>
           <Box className={classes.img} sx={{ border: tool.border }}>
-            <img src={tool.tool.img} alt={tool.tool.img} />
+            <img src={tool.img} alt={tool.img} />
           </Box>
           <br />
           <H fontSize="12px" color="#484848" fontWeight="500">
-            {tool.tool.title}
+            {tool.title}
           </H>
         </Grid>
       );

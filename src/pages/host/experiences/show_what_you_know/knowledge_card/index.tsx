@@ -1,11 +1,9 @@
 import React from "react";
-
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 
 import H from "../../../../../components/typography/h";
-
 import { useStyles } from "./useStyles";
 import { BaseCard } from "../../../../../@types/styles/baseCard";
 
@@ -15,7 +13,9 @@ export interface Props {
 
 const KnowledgeCard = (props: Props) => {
   const classes = useStyles();
+
   const { img, title, content } = props.knowledge;
+
   return (
     <Card className={classes.card}>
       <CardMedia component="img" image={img} alt="green iguana" />

@@ -1,11 +1,10 @@
-import React from "react";
+import React, { Fragment, useState } from "react";
+import Button from "@mui/material/Button";
 
 import Question from "./Question";
 import ExperienceTitle from "../experience_title";
 import { BaseCard } from "../../../../@types/styles/baseCard";
 import { useStyles } from "./useStyles";
-
-import Button from "@mui/material/Button";
 
 export interface IQuestion {
   question: string;
@@ -13,16 +12,12 @@ export interface IQuestion {
 }
 
 const Questions = () => {
-  const [textBtn, setTextBtn] = React.useState<string[]>([
-    "0",
-    "Hiển thị thêm",
-  ]);
   const classes = useStyles();
 
+  const [textBtn, setTextBtn] = useState<string[]>(["0", "Hiển thị thêm"]);
+
   const toolTitle: BaseCard = {
-    img: "",
     title: "Câu hỏi thường gặp",
-    content: "",
   };
 
   const questions: IQuestion[] = [
@@ -77,7 +72,7 @@ const Questions = () => {
   };
 
   return (
-    <React.Fragment>
+    <Fragment>
       <ExperienceTitle experienceTitle={toolTitle} />
       <div className={classes.question}>
         {renderQuestion()}
@@ -85,7 +80,7 @@ const Questions = () => {
           {textBtn[1]}
         </Button>
       </div>
-    </React.Fragment>
+    </Fragment>
   );
 };
 

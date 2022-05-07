@@ -2,13 +2,14 @@ import React from "react";
 
 import H from "../../../../components/typography/h";
 import LightSilverButton from "../../../../components/button/light_silver/lightSilver";
-
 import { useStyles } from "./useStyles";
 
 const Introduction = () => {
   const classes = useStyles();
+
   const video: string =
     "https://a0.muscache.com/v/76/07/76078ccb-c33d-4d25-aa9e-4fc4c7886633/bdcbe89cac105172b0faee8a2a064c76_8000k_1.mp4";
+
   return (
     <div className={classes.root}>
       <video
@@ -39,6 +40,7 @@ const Introduction = () => {
             Kiếm tiền bằng cách dẫn dắt mọi người tham gia các hoạt động mà bạn
             yêu thích.
           </H>
+          <br />
           <LightSilverButton
             color="#fff"
             background="#000 !important"

@@ -1,15 +1,13 @@
 import React from "react";
 
 import ActivityCard from "./activity_card";
-
 import { useStyles } from "./useStyles";
-
 import { BaseCard } from "../../../../@types/styles/baseCard";
 
-const ListActivity = () => {
+const Activities = () => {
   const classes = useStyles();
 
-  const listActivity: BaseCard[] = [
+  const activities: BaseCard[] = [
     {
       img: "https://a0.muscache.com/im/pictures/2bdf020b-303c-46a4-bf2c-6c6a8e775bd8.jpg",
       title: "Tạo một hoạt động theo cách của bạn",
@@ -31,9 +29,9 @@ const ListActivity = () => {
   ];
 
   const renderActivity = () => {
-    if (!listActivity) return "";
+    if (!activities) return "";
 
-    return listActivity.map((activity: BaseCard, key: number) => {
+    return activities.map((activity: BaseCard, key: number) => {
       return <ActivityCard activity={activity} key={key} index={key} />;
     });
   };
@@ -45,4 +43,4 @@ const ListActivity = () => {
   );
 };
 
-export default ListActivity;
+export default Activities;
