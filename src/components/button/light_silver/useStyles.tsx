@@ -11,7 +11,6 @@ export const useStyles = makeStyles({
     color: (props: BaseButton) => props.color || color,
     borderRadius: "8px !important",
     textTransform: "none !important" as "none",
-    fontSize: "18px !important"
+    fontSize: "18px",
   },
 });
-
