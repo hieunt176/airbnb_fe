@@ -6,4 +6,5 @@ export const baseText: TextStyle = {
   textAlign: "start",
   fontSize: "33px",
   padding: "0",
+  lineHeight: "1",
 };

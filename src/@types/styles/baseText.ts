@@ -5,4 +5,5 @@ export interface BaseText {
   textAlign?: string;
   fontSize?: string;
   padding?: string;
+  lineHeight?: string;
 }
